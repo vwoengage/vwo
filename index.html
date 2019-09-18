@@ -30,6 +30,9 @@ _pcq.push(['APIReady', callbackOnSuccessFunction,callbackOnFailureFunction]); //
 function callbackOnSuccessFunction() {
     //now api is ready
 }
+     function callbackOnFailureFunction(values) {
+    console.log(values.reasons) //It will give you the array of reasons why VWO Engage API could not get ready .For eg:- ["PRIVATE_BROWSING", "BROWSER_NOT_SUPPORTED"] etc.
+}
         </script>
     <script>
         window._pcq = window._pcq || [];
